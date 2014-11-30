@@ -26,7 +26,8 @@ public class RuleFactory {
     public static Rule createRule(Event calendar){
         Rule rule = new OnceTimeRule(calendar);
         
-        if(calendar == null || StringUtils.isBlank(calendar.getRule())){
+//        if(calendar == null || StringUtils.isBlank(calendar.getRule())){
+        if(calendar == null || StringUtils.isEmpty(calendar.getRule().trim())){
             return rule;
         }
         

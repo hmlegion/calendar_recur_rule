@@ -15,6 +15,7 @@ public class DailyRuleTest extends Assert {
 
         Rule rule = RuleFactory.createRule(calendar);
 
+        System.out.println(rule.nextOccurDate(DateTimeUtils.parseDate("2013-05-29")));
         // 在事件最开始之前
         assertTrue(DateTimeUtils.compareTo(rule
                 .nextOccurDate(DateTimeUtils.parseDate("2013-05-29")), DateTimeUtils
