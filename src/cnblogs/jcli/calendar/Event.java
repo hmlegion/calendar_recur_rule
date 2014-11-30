@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Event {
     /**
-     * 日历类型: 1,公历 2,农历
+     * 日历类型: 0,公历 1,农历
      */
     private int calendarType;
     
